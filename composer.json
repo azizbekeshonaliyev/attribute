@@ -1,0 +1,54 @@
+{
+    "name": "azizbekeshonaliyev/attribute",
+    "description": "Attrubute",
+    "keywords": [
+        "azizbekeshonaliyev",
+        "attribute"
+    ],
+    "homepage": "https://github.com/azizbekeshonaliyev/attribute",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Azizbek",
+            "email": "1996azizbekeshonaliyev@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.8.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Azizbekeshonaliyev\\Attribute\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Azizbekeshonaliyev\\Attribute\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Azizbekeshonaliyev\\Attribute\\AttributeServiceProvider"
+            ],
+            "aliases": {
+                "Attribute": "Azizbekeshonaliyev\\Attribute\\AttributeFacade"
+            }
+        }
+    }
+}
